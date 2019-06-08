@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+p {
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
+button {
+    background: white;
+    width: 140px;
+    height: 35px;
+    margin-top: 22px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.nav-container {
+    margin: 40px 0 0 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: silver;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.services-header-container {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    flex-flow: row wrap;
+}
+
+.services-header-img {
+    width: 100%;
+}
+
+.main-section-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin: 40px 0;
+}
+
+.digital-design-container {
+    background: #EEE8E7;
+    width: 47.7%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+    margin: 0 0 40px 0;
+}
+
+.ux-ui-container {
+    background: #EEE8E7;
+    width: 47.7%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+    margin: 0 0 40px 0;
+}
+
+.digital-marketing-container {
+    background: #EEE8E7;
+    width: 47.7%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+    margin: 0 0 40px 0;
+}
+
+.web-dev-container {
+    background: #EEE8E7;
+    width: 47.7%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+    margin: 0 0 40px 0;
+}
+
+.ios-dev-container {
+    background: #EEE8E7;
+    width: 47.7%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+}
+
+.android-dev-container {
+    background: #EEE8E7;
+    width: 47.7%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid black;
+}
+
+.facts-container {
+    display: flex;
+    border-top: 2px solid black;
+    margin: 40px 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.facts-list-container {
+    margin: 40px 20px 0 0;
+}
+
+.facts-img-container {
+    margin: 40px 0 0 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    list-style-type: square;
+    list-style-position: inside;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 40px 0 20px 0;
+}
+
+@media only screen and (max-width: 950px) {
+    .main-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nav-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 90%;
+    }
+    .main-section-container,
+    .facts-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .services-header-container {
+        height: auto;
+        justify-content: inherit;
+        align-items: inherit;
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .services-header-img {
+        width: 100%;
+        display: block;
+    }
+    .digital-design-container,
+    .ux-ui-container,
+    .digital-marketing-container,
+    .web-dev-container {
+        width: 100%;
+        height: auto;
+    }
+    .ios-dev-container,
+    .android-dev-container {
+        width: 100%;
+        height: auto;
+        margin: 0 0 40px 0;
+    }
+    .facts-img-container {
+        height: auto;
+        justify-content: inherit;
+        align-items: inherit;
+    }
+    .services-info-img {
+        width: 100%;
+        display: block;
+    }
+    footer {
+        margin: 0 20px;
+    }
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .main-section-container {}
+} */
