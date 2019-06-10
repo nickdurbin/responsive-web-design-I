@@ -1,4 +1,4 @@
-* {
+    * {
     box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ h5 {
 
 .main-container {
     margin: 0 auto;
-    width: 875px;
+    max-width: 875px;
 }
 
 a:hover {
@@ -159,4 +159,97 @@ footer p {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     height: 100px;
+}
+
+@media (max-width: 800px) {
+    html,
+    body {
+        height: auto;
+        width: 100%;
+    }
+    .main-container {
+        max-width: 800px;
+        margin: 5px;
+    }
+    hr {
+        border-top: 2px solid black;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+    .hero-img-container,
+    .hero-img-container img {
+        display: none;
+    }
+    .hero-header-container {
+        width: 100%;
+        height: auto;
+        margin: 35px 0 50px 0;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+
+@media (max-width: 500px) {
+    html,
+    body {
+        height: auto;
+        width: 100%;
+    }
+    .main-container {
+        max-width: 500px;
+        margin: 5px;
+    }
+
+    hr {
+        border-top: 2px solid black;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-container a {
+        border-bottom: 1px solid black;
+        line-height: 3;
+        font-weight: 600;
+    }
+    img.logo {
+        order: 0;
+        align-self: flex-start;
+        margin: 0;
+    }
+    .hero-img-container,
+    .hero-img-container img {
+        display: none;
+    }
+    .hero-header-container {
+        width: 100%;
+        height: auto;
+        margin: 35px 0 50px 0;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .features-about-container {
+        flex-direction: column;
+        margin: 25px 0;
+    }
+    .services-product-vision-container {
+        flex-direction: column;
+    }
+    .features-container {
+        margin-bottom: 25px;
+    }
+    .services-container {
+        margin-bottom: 25px;
+    }
+    .product-container {
+        margin-bottom: 25px;
+    }
 }
